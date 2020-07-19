@@ -18,6 +18,10 @@ public class Tags extends BaseTimeEntity {
     @Column(length = 20, nullable = false)
     private String name;
 
+    private double score;
+
+    private Integer count;
+    
     @Builder
     public Tags(String name) {
         this.name = name;
