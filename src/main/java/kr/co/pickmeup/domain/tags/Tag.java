@@ -10,12 +10,12 @@ import javax.persistence.*;
 @Getter
 @NoArgsConstructor
 @Entity
-public class Tags extends BaseTimeEntity {
+public class Tag {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(length = 20, nullable = false)
+    @Column(length = 20, nullable = false, unique = true)
     private String name;
 
     private double score;
@@ -23,12 +23,10 @@ public class Tags extends BaseTimeEntity {
     private Integer count;
     
     @Builder
-    public Tags(String name) {
+    public Tag(String name, double score, Integer count) {
         this.name = name;
-    }
-
-    public void update(String name) {
-        this.name = name;
+        this.score = score;
+        this.count = count;
     }
 
 }

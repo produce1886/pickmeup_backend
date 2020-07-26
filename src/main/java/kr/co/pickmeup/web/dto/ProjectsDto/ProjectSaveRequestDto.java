@@ -1,6 +1,6 @@
 package kr.co.pickmeup.web.dto.ProjectsDto;
 
-import kr.co.pickmeup.domain.projects.Projects;
+import kr.co.pickmeup.domain.projects.Project;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -21,8 +21,8 @@ public class ProjectSaveRequestDto {
         this.author = author;
     }
 
-    public Projects toEntity() {
-        return Projects.builder()
+    public Project toEntity() {
+        return Project.builder()
                 .title(title)
                 .content(content)
                 .author(author)

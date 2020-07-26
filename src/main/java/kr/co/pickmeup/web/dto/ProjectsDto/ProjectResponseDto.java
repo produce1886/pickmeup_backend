@@ -1,6 +1,6 @@
 package kr.co.pickmeup.web.dto.ProjectsDto;
 
-import kr.co.pickmeup.domain.projects.Projects;
+import kr.co.pickmeup.domain.projects.Project;
 import lombok.Getter;
 
 import java.time.LocalDateTime;
@@ -15,7 +15,7 @@ public class ProjectResponseDto {
     private LocalDateTime createdDate;
     private LocalDateTime modifiedDate;
 
-    public ProjectResponseDto(Projects entity) {
+    public ProjectResponseDto(Project entity) {
         this.id = entity.getId();
         this.title = entity.getTitle();
         this.content = entity.getContent();
