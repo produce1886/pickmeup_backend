@@ -33,6 +33,8 @@ public class ProjectService {
     public ProjectResponseDto findById (Long id) {
         Project entity = projectRepository.findById(id).orElseThrow(()-> new IllegalArgumentException("해당 게시글이 존재하지 않습니다. id=" + id));
 
+        entity.add_viewNum();
+
         return new ProjectResponseDto(entity);
     }
 

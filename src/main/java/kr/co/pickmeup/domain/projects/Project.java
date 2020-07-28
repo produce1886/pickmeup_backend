@@ -38,4 +38,8 @@ public class Project extends BaseTimeEntity {
         this.content = content;
     }
 
+    public void add_viewNum() {
+        this.viewNum++;
+    }
+
 }
