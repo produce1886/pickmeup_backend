@@ -27,10 +27,18 @@ public interface ProjectRepository extends JpaRepository<Project, Long> {
     @Query(value = "select sum(view_num) from project where id=:project_id", nativeQuery = true)
     Integer getViewnumCount(@Param("project_id") Long project_id);
 
-    Page<Project> findAll(Pageable pageable);
-
     List<Project> findByTitleContains(String keyword);
 
     List<Project> findByContentContains(String keyword);
+
+    Page<Project> findAll(Pageable pageable);
+
+    Page<Project> findByCategory(String category, Pageable pageable);
+
+    Page<Project> findByHuntingField(String huntingField, Pageable pageable);
+
+    Page<Project> findByRegion(String region, Pageable pageable);
+
+    Page<Project> findByProjectCategory(String projectCategory, Pageable pageable);
 
 }

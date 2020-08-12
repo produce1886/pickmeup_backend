@@ -50,6 +50,30 @@ public class ProjectController {
         return new ResponseEntity<> (projects, HttpStatus.OK);
     }
 
+    @GetMapping("categoryFilter")
+    public ResponseEntity findByCategory(@RequestParam String category, Pageable pageable) {
+        Page<Project> projects = projectService.findByCategory(category, pageable);
+        return new ResponseEntity<> (projects, HttpStatus.OK);
+    }
+
+    @GetMapping("huntingFieldFilter")
+    public ResponseEntity findByHuntingField(@RequestParam String huntingField, Pageable pageable) {
+        Page<Project> projects = projectService.findByHuntingField(huntingField, pageable);
+        return new ResponseEntity<> (projects, HttpStatus.OK);
+    }
+
+    @GetMapping("regionFilter")
+    public ResponseEntity findByRegion(@RequestParam String region, Pageable pageable) {
+        Page<Project> projects = projectService.findByRegion(region, pageable);
+        return new ResponseEntity<> (projects, HttpStatus.OK);
+    }
+
+    @GetMapping("projectCategoryFilter")
+    public ResponseEntity findByProjectCategory(@RequestParam String projectCategory, Pageable pageable) {
+        Page<Project> projects = projectService.findByProjectCategory(projectCategory, pageable);
+        return new ResponseEntity<> (projects, HttpStatus.OK);
+    }
+
     // update
     @PutMapping("/{id}")
     public Long update(@PathVariable Long id, @RequestBody ProjectUpdateRequestDto requestDto) {

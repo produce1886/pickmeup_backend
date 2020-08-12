@@ -188,6 +188,26 @@ public class ProjectService {
         return projectRepository.findAll(pageable);
     }
 
+    @Transactional
+    public Page<Project> findByCategory(String category, Pageable pageable) {
+        return projectRepository.findByCategory(category, pageable);
+    }
+
+    @Transactional
+    public Page<Project> findByHuntingField(String huntingField, Pageable pageable) {
+        return projectRepository.findByHuntingField(huntingField, pageable);
+    }
+
+    @Transactional
+    public Page<Project> findByRegion(String region, Pageable pageable) {
+        return projectRepository.findByRegion(region, pageable);
+    }
+
+    @Transactional
+    public Page<Project> findByProjectCategory(String projectCategory, Pageable pageable) {
+        return projectRepository.findByProjectCategory(projectCategory, pageable);
+    }
+
     // search
     @Transactional
     public List<ProjectResponseDto> searchProjects(String keyword) {
