@@ -1,0 +1,17 @@
+{
+  "groups": [
+    {
+      "name": "file",
+      "type": "kr.co.pickmeup.property.FileUploadProperties",
+      "sourceType": "kr.co.pickmeup.property.FileUploadProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "file.upload-dir",
+      "type": "java.lang.String",
+      "sourceType": "kr.co.pickmeup.property.FileUploadProperties"
+    }
+  ],
+  "hints": []
+}
