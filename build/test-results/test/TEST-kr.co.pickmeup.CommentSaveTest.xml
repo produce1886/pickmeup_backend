@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kr.co.pickmeup.CommentSaveTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-08-16T10:51:36" hostname="Dokyungui-MacBookPro.local" time="0.087">
+  <properties/>
+  <testcase name="공백_제거_테스트" classname="kr.co.pickmeup.CommentSaveTest" time="0.087"/>
+  <system-out><![CDATA[19:51:29.768 [Test worker] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class kr.co.pickmeup.CommentSaveTest]
+19:51:29.778 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+19:51:29.786 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+19:51:29.803 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [kr.co.pickmeup.CommentSaveTest] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+19:51:29.821 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [kr.co.pickmeup.CommentSaveTest], using SpringBootContextLoader
+19:51:29.824 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [kr.co.pickmeup.CommentSaveTest]: class path resource [kr/co/pickmeup/CommentSaveTest-context.xml] does not exist
+19:51:29.825 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [kr.co.pickmeup.CommentSaveTest]: class path resource [kr/co/pickmeup/CommentSaveTestContext.groovy] does not exist
+19:51:29.825 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [kr.co.pickmeup.CommentSaveTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+19:51:29.826 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [kr.co.pickmeup.CommentSaveTest]: CommentSaveTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+19:51:29.869 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [kr.co.pickmeup.CommentSaveTest]
+19:51:29.933 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/Users/dokylee/Desktop/springboot/pickmeup_mid/build/classes/java/main/kr/co/pickmeup/Application.class]
+19:51:29.934 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration kr.co.pickmeup.Application for test class kr.co.pickmeup.CommentSaveTest
+19:51:30.031 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [kr.co.pickmeup.CommentSaveTest]: using defaults.
+19:51:30.031 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+19:51:30.055 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4fc76e12, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6d64aa8e, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@2454ce0e, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@6638534b, org.springframework.test.context.support.DirtiesContextTestExecutionListener@127b1660, org.springframework.test.context.transaction.TransactionalTestExecutionListener@5a03ee7b, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@58a56f8b, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@7ca3cddf, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@36210c3d, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@73945cb4, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@3ebc7a, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@62114497]
+19:51:30.059 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [kr.co.pickmeup.CommentSaveTest]
+19:51:30.060 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [kr.co.pickmeup.CommentSaveTest]
+19:51:30.065 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [kr.co.pickmeup.CommentSaveTest]
+19:51:30.065 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [kr.co.pickmeup.CommentSaveTest]
+19:51:30.067 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [kr.co.pickmeup.CommentSaveTest]
+19:51:30.067 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [kr.co.pickmeup.CommentSaveTest]
+19:51:30.072 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@489e2d68 testClass = CommentSaveTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@4666ef12 testClass = CommentSaveTest, locations = '{}', classes = '{class kr.co.pickmeup.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@4ef9a2c0, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@5a609d99, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@6750965, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@123ad6c0], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true]], class annotated with @DirtiesContext [false] with mode [null].
+19:51:30.073 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [kr.co.pickmeup.CommentSaveTest]
+19:51:30.073 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [kr.co.pickmeup.CommentSaveTest]
+19:51:30.100 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=-1}
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.7.RELEASE)
+
+2020-08-16 19:51:30.389  INFO 77453 --- [    Test worker] kr.co.pickmeup.CommentSaveTest           : Starting CommentSaveTest on Dokyungui-MacBookPro.local with PID 77453 (started by dokylee in /Users/dokylee/Desktop/springboot/pickmeup_mid)
+2020-08-16 19:51:30.391  INFO 77453 --- [    Test worker] kr.co.pickmeup.CommentSaveTest           : No active profile set, falling back to default profiles: default
+2020-08-16 19:51:31.696  INFO 77453 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-08-16 19:51:31.802  INFO 77453 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 94ms. Found 5 repository interfaces.
+2020-08-16 19:51:32.350  INFO 77453 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6d74d607] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-16 19:51:32.686  INFO 77453 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-08-16 19:51:32.757  INFO 77453 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2020-08-16 19:51:32.758  INFO 77453 --- [    Test worker] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-08-16 19:51:33.018  INFO 77453 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-08-16 19:51:33.139  INFO 77453 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-08-16 19:51:33.300  INFO 77453 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-08-16 19:51:33.315  INFO 77453 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Hibernate: 
+    
+    alter table comment 
+       add constraint FKb5kenf6fjka6ck0snroeb5tmh 
+       foreign key (project_id) 
+       references project (id)
+Hibernate: 
+    
+    alter table comment 
+       add constraint FK8kcum44fvpupyw6f5baccx25c 
+       foreign key (user_id) 
+       references user (id)
+Hibernate: 
+    
+    alter table project 
+       add constraint FKo06v2e9kuapcugnyhttqa1vpt 
+       foreign key (user_id) 
+       references user (id)
+Hibernate: 
+    
+    alter table project_tag 
+       add constraint FKk3ccabfs72wkx2008pn7tij9b 
+       foreign key (project_id) 
+       references project (id)
+2020-08-16 19:51:34.462  INFO 77453 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-16 19:51:35.594  INFO 77453 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-16 19:51:35.647  WARN 77453 --- [    Test worker] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-16 19:51:36.310  INFO 77453 --- [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-08-16 19:51:36.365  INFO 77453 --- [    Test worker] kr.co.pickmeup.CommentSaveTest           : Started CommentSaveTest in 6.253 seconds (JVM running for 7.343)
+안녕하세
+요
+!!ㅏㅣㅡㅡㅏ
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
