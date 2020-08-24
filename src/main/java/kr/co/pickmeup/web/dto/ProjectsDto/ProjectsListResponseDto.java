@@ -9,7 +9,7 @@ import java.time.LocalDateTime;
 public class ProjectsListResponseDto {
     private Long id;
     private String title;
-    private String author;
+    private String email;
     private Integer viewNum;
     private LocalDateTime modifiedDate;
     // 태그
@@ -18,7 +18,7 @@ public class ProjectsListResponseDto {
     public ProjectsListResponseDto(Project entity) {
         this.id = entity.getId();
         this.title = entity.getTitle();
-        this.author = entity.getAuthor();
+        this.email = entity.getEmail();
         this.viewNum = entity.getViewNum();
         this.modifiedDate = entity.getModifiedDate();
     }
