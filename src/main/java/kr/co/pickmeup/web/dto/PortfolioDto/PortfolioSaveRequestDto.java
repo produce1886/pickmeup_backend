@@ -1,0 +1,51 @@
+package kr.co.pickmeup.web.dto.PortfolioDto;
+
+import kr.co.pickmeup.domain.portfolio.Portfolio;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+
+@Getter
+@NoArgsConstructor
+public class PortfolioSaveRequestDto {
+
+    private String title;
+    private String content;
+    private String email;
+    private String category;
+    private String huntingField;
+    private String region;
+    private String portfolioCategory;
+    private String[] tags;
+    private String image;
+
+    @Builder
+    public PortfolioSaveRequestDto(String title, String content, String email, String category, String huntingField, String region, String portfolioCategory, String[] tags, String image) {
+        this.title = title;
+        this.content = content;
+        this.email = email;
+        this.category = category;
+        this.huntingField = huntingField;
+        this.region = region;
+        this.portfolioCategory = portfolioCategory;
+        this.tags = tags;
+
+        if(image == null || image == "")
+            this.image = null;
+        else
+            this.image = image;
+    }
+
+    public Portfolio toEntity() {
+        return Portfolio.builder()
+                .title(title)
+                .content(content)
+                .email(email)
+                .category(category)
+                .huntingField(huntingField)
+                .region(region)
+                .portfolioCategory(portfolioCategory)
+                .image(image)
+                .build();
+    }
+}
